@@ -9,8 +9,6 @@ const allPosts = Object.values(
 const tags = [
   ...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat()),
 ];
-
-console.log(allPosts);
 ---
 
 <BaseLayout pageitle={pageTitle}>
